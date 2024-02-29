@@ -1,12 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primera Web</title>
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/938ca99d8c.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <p>Esta es mi primera página Web</p>
+    <div class="container">
+        <header>
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
+            <nav>
+                <ul>
+                    <li>Inicio</li>
+                    <li>Acerca de mí</li>
+                    <li>Trabajos</li>
+                    <li>Servicios</li>
+                    <li>Contacto</li>
+                </ul>
+            </nav>
+        </header>
+        <main id="seccion-principal">
+            <section class="seccion-1">
+                <div class="example">
+                    Div de prueba
+                </div>
+                <div class="acerca-de">
+                    <h2>Acerca de mí</h2>
+                    <p>¡Bienvenido a mi página! Aquí, aprenderás más sobre mí.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quo iste laudantium pariatur laborum quidem nisi veritatis nobis. Eligendi fugiat impedit nam dolorem distinctio atque consequuntur error ab vitae. Eaque!</p>
+                </div>
+                <div class="acerca-imagen">
+                    <img src="img/portada/monito.webp" height="150px" alt="imagen portada">
+                </div>
+            </section>
+            <section class="seccion-2">
+                <img src="img/carrusel/fondo1.jpg" height="150px" alt="Imagen de carrusel 1">
+                <img src="img/carrusel/fondo2.jpg" height="150px" alt="Imagen de carrusel 2">
+                <img src="img/carrusel/galaxia.jpg" height="150px" alt="Imagen de carrusel 3">
+                <img src="img/carrusel/tunel.jpg" height="150px" alt="Imagen de carrusel 4">
+            </section>
+        </main>
+        <footer>
+            <h3>Mis Redes:</h3>
+            <nav>
+                <ul>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/josgutierrez/"><i class="fa-brands fa-github"></i> GitHub</a></li>
+                    <li><a target="_blank" href="https://github.com/chano64123"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a></li>
+                    <li><a target="_blank" href="https://discordapp.com/users/424046446719926272"><i class="fa-brands fa-discord"></i> Discord</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
 </body>
+
 </html>
