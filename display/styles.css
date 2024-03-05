@@ -1,0 +1,20 @@
+div {
+    display: inline;
+    height: 50px;
+    width: 100px;
+    background-color: aqua;
+}
+
+p {
+    display: inline-flex;
+    height: 50px;
+    width: 100px;
+    background-color: antiquewhite;
+}
+
+a {
+    display: block;
+    height: 50px;
+    width: 100px;
+    background-color: greenyellow;
+}
