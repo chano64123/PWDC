@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
 }
 
 ol,
@@ -36,4 +37,101 @@ header nav ul li {
 header a i {
     color: #fff;
     font-size: 3em;
+}
+
+.acerca-de {
+    text-align: end;
+    max-width: 500px;
+}
+
+.seccion-1 {
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.seccion-2 img {
+    width: 100%;
+}
+
+footer {
+    background-color: #22211f;
+    width: 100%;
+    color: #fff;
+}
+
+#footer {
+    padding: 1em;
+}
+
+#footer nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+#footer nav ul li a {
+    color: #eee;
+}
+
+#fixed {
+    position: fixed;
+    bottom: 22px;
+    right: 39px;
+    font-weight: 900;
+    font-size: 30px;
+    color: #b59a61;
+}
+
+#fixed:hover {
+    color: #f2ff00;
+}
+
+.title-section {
+    display: block;
+    color: #b59a61;
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.trabajo-container {
+    padding: 1em;
+}
+
+.trabajos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.trabajo-item {
+    width: 250px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+}
+
+.trabajo-item img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.trabajo-item h2 {
+    font-size: 1.3em;
+    color: #df823f;
+}
+
+.trabajo-item p {
+    text-align: justify;
+    font-size: 0.9em;
+    margin-bottom: 0;
+}
+
+.trabajo-item a {
+    text-decoration: underline;
+    color: #df823f;
 }
