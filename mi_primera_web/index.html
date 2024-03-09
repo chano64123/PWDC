@@ -6,32 +6,32 @@
         <title>Mi primera Web</title>
         <link rel="stylesheet" href="styles2.css" />
         <script src="https://kit.fontawesome.com/938ca99d8c.js" crossorigin="anonymous"></script>
+        <script src="script.js" defer></script>
     </head>
 
     <body>
         <div class="container">
             <header id="encabezado">
-                <a href="#"><i class="fa-brands fa-discord"></i></a>
-                <nav>
-                    <input type="checkbox" id="check" />
-                    <label for="check" class="checkbtn">
+                <a href="#" id="logo"><i class="fa-brands fa-discord"></i></a>
+                <nav class="navbar">
+                    <label class="checkbtn">
                         <i class="fa-solid fa-bars"></i>
                     </label>
                     <ul class="menu">
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#seccion-principal">Acerca de</a></li>
-                        <li><a href="#trabajos">Trabajos</a></li>
-                        <li><a href="#">Servicios</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a class="navli" href="#">Inicio</a></li>
+                        <li><a class="navli" href="#seccion-principal">Acerca de</a></li>
+                        <li><a class="navli" href="#trabajos">Trabajos</a></li>
+                        <li><a class="navli" href="#">Servicios</a></li>
+                        <li><a class="navli" href="#contacto">Contacto</a></li>
                     </ul>
                 </nav>
             </header>
             <main id="seccion-principal">
                 <section class="seccion-1">
                     <div class="acerca-de">
-                        <h2>Acerca de mí</h2>
+                        <h2 id="acerca-de-title">Acerca de mí</h2>
                         <p>¡Bienvenido a mi página! Aquí, aprenderás más sobre mí.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quo iste laudantium pariatur laborum quidem nisi veritatis nobis. Eligendi fugiat impedit nam dolorem distinctio atque consequuntur error ab vitae. Eaque!</p>
+                        <p id="parrafo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quo iste laudantium pariatur laborum quidem nisi veritatis nobis. Eligendi fugiat impedit nam dolorem distinctio atque consequuntur error ab vitae. Eaque!</p>
                     </div>
                     <div class="acerca-imagen">
                         <img src="img/portada/monito.webp" height="150px" alt="imagen portada" />

@@ -45,9 +45,6 @@ header a i {
 }
 
 /* Para el Menu */
-#check {
-    display: none;
-}
 
 .checkbtn {
     color: white;
@@ -82,8 +79,12 @@ header a i {
         justify-content: space-around;
     }
 
-    #check:checked ~ ul {
-        left: 0;
+    .active .menu {
+        left: 0 !important;
+    }
+
+    .active .checkbtn {
+        color: #2c3e50;
     }
 
     #encabezado nav ul {
@@ -102,10 +103,6 @@ header a i {
         color: #df823f;
         font-weight: bold;
         font-size: 40px;
-    }
-
-    #check:checked ~ .checkbtn {
-        color: #2c3e50;
     }
 }
 
