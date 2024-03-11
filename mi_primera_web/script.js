@@ -33,7 +33,7 @@ console.log(acercaDeTitle.innerHTML)
 
 // FUNCIONES
 
-let nombre = 'Jose';
+let nombres = 'Jose Carlos';
 let ciudad = 'Tacna - Peru';
 let gusto = 'programar y enseñar';
 
@@ -42,8 +42,8 @@ function cambiarTextoParrafo(nombre, ciudad, gusto) {
   return contenido;
 }
 
-let parrafo = document.querySelector("#parrafo2");
-parrafo.innerHTML = cambiarTextoParrafo(nombre, ciudad, gusto);
+let parrafo2 = document.querySelector("#parrafo2");
+parrafo2.innerHTML = cambiarTextoParrafo(nombres, ciudad, gusto);
 
 const modificarTituloAcercaDe = () => {
   var day = new Date().getDay();
@@ -63,3 +63,35 @@ menu_responsive.onclick = function () {
   navBar.classList.toggle("active");
   console.log("si funca el click")
 };
+
+//#region PARA EL FORMULARIO DE CONTACTO
+const form = document.getElementById("form");
+const nombre = document.getElementById("nombre");
+const parrafo = document.getElementById("alertas");
+const alertaContainer = document.getElementById("alerta-container");
+
+function validarFormulario() {
+  let warnings = "";
+  let valido = true;
+  parrafo.innerHTML = "";
+
+  if (nombre.value.length < 4) {
+    warnings += `El nombre debe contener más de 4 caracteres`;
+    valido = false;
+  }
+
+  parrafo.innerHTML = valido ? "Enviado" : warnings;
+  return valido;
+}
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault(); // Evita que el formulario se envíe automáticamente
+  if (validarFormulario()) {
+    // Si la validación es exitosa, puedes enviar el formulario
+    alertaContainer.classList.add('oculto');
+    formulario.submit();
+  } else {
+    alertaContainer.classList.remove('oculto');
+  }
+});
+//#endregion

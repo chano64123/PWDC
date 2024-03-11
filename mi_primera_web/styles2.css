@@ -173,12 +173,14 @@ footer {
 
 .trabajo-container {
     padding: 1em;
+    background-color: #eee;
 }
 
 .trabajos {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 1em;
 }
 
 .trabajo-item {
@@ -218,5 +220,115 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+}
+
+
+/* ------------- Encabezado Contacto ------------- */
+.contacto-container{
+    padding: 1em;
+    background-color: #f6f7f8;
+}
+
+.form-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* ------------- Formulario ------------- */
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2em;
+    background-color: #f6f7f8;
+    border: 2px solid #d6d9dc;
+    border-radius: 16px;
+
+    width: 50%;
+    padding: 2.5em;
+}
+
+/* ------------- Campos del Formulario ------------- */
+.oculto {
+    display: none !important;
+}
+
+.form-row {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+}
+
+.form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+
+    width: 100%;
+
+    box-sizing: border-box;
+}
+
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+
+    color: #ffffff;
+    background-color: #5995da;
+
+    border: none;
+    border-radius: 3px;
+
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.form-row button:hover {
+    background-color: #76aeed;
+}
+
+.form-row button:active {
+    background-color: #407fc7;
+}
+
+.alertas{
+    color: red;
+    font-size: large;
+}
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+@media (max-width: 779px) {
+    .formulario {
+        width: 80%;
     }
 }

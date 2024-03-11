@@ -23,6 +23,7 @@
                         <li><a class="navli" href="#trabajos">Trabajos</a></li>
                         <li><a class="navli" href="#">Servicios</a></li>
                         <li><a class="navli" href="#contacto">Contacto</a></li>
+                        <li><a class="navli" href="#redes-sociales">Redes Sociales</a></li>
                     </ul>
                 </nav>
             </header>
@@ -63,10 +64,36 @@
                         </div>
                     </div>
                 </section>
+                <section id="contacto" class="contacto-container">
+                    <div class="form-header">
+                        <h1 class="title-section">Contacto</h1>
+                        <p><em>¡Esperamos tu consulta!</em></p>
+                        <form action="" method="get" class="formulario" id="form">
+                            <div class="form-row">
+                                <label for="nombre">Nombre</label>
+                                <input id="nombre" name="nombre" type="text" />
+                            </div>
+                            <div class="form-row">
+                                <label for="email">Email</label>
+                                <input id="email" name="email" type="email" placeholder="pepe@gmail.com"/>
+                            </div>
+                            <div class="form-row">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea id="mensaje" name="mensaje"></textarea>
+                            </div>
+                            <div class="form-row">
+                                <button id="submit" type="submit">Enviar</button>
+                            </div>
+                            <div class="form-row oculto" id="alerta-container">
+                                <p class="alertas" id="alertas">aca el error</p>
+                            </div>
+                        </form>
+                    </div>
+                </sectio>
             </main>
-            <footer id="contacto">
+            <footer id="redes-sociales">
                 <div id="footer">
-                    <h3 class="title-section">Contacto</h3>
+                    <h3 class="title-section">Redes Sociales</h3>
                     <nav>
                         <ul>
                             <li>
